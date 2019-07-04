@@ -6,6 +6,8 @@ Para visualizar essa palestra você deve baixar o projeto [Go present tool](http
 
 execute `present`
 
+Se preferir acesse https://go-talks.appspot.com/github.com/dsaouda/golang-meetup-error-tracking/slides.slide#1
+
 # exemplos
 
 1. Para rodar os exemplos você deve criar uma conta no https://sentry.io ou instalar o sentry local https://hub.docker.com/_/sentry/
