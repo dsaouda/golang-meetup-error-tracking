@@ -1,0 +1,13 @@
+language: go
+go:
+- 1.6
+- 1.7
+- 1.8
+- 1.9
+sudo: false
+install:
+- go get -t -v ./...
+notifications:
+  slack:
+    rooms:
+      secure: BfmTpokJ73u/shFw19npBlII5jiExio9vTS4hPaUzzLpINm6yRX2bDOJ0Hvv5FMRfHxCbt8B62WvivdixoJVgD0uTWkSGqH5zLdUDH4Kcum6EU5rVFiBW+v9JEUeNQWR8uwdD2r7qc4lGVBCl2J6iC4cuCimWEoMoHmtkz93zCgqFW2JBANK2RjN54QjEnPzluBA9vrU8pHF/EMfnqaS38YCcHHXX3q0XUmQpcoQzo+vZKDdhlHMBWWZbyRnp0MxsneobP0oiPkYsBGsXuuaSHW4DtG8l1M8t/SwijHxxGDFGjUCMIYuIi1N7FgmcB4fh2H/KhUkHRKLHqey5EEOZYN1c+rTwh5EBQN7Q96gehARN7s+uy/+yjVs1MjfR7Ou3NyAdbjiZpmj1z8CIqqseLukmBHTqVhzs5Y2TSfNX9tqKuhXWpJXsI0Rld/Th/SXQko7LoSQJ4BDoSu9tFj30gAwPlJs4A362vZ4BaZ5n5YfingzpsaabH/tZ3Q9GIT42BIu1u1FLPqosmVtRXKqKauz9UDywtwzScjUxZfy/bODlpob/D50X0+MqekNayXJMryLMmGvm+ugV2F+5D3FkAW/QsM016FUiUnIkjpD2Ey6J/9d4A0Jm4oDBXhXhc0/B9xlakDIbiX8Hmwt+/5GOpKqIoEJultSE8gzJP8fve8=

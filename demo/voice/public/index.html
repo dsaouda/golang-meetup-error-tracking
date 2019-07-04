@@ -1,0 +1,59 @@
+<!-- isso aqui está feito :(  -->
+
+<!doctype html>
+<html lang="en-us">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+
+		input, textarea, button {
+			font-size: 20px;
+			width: 90%;
+			height: 50px;
+			padding: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="avisos"></div>
+
+	<div style="width: 90%; margin: 0 auto;">	
+	    <form method="post">
+	        <br><input placeholder="Telefone ex: 11988884444" type="text" id="telefone" name="telefone" />
+	        <br><textarea placeholder="Uma mensagem" id="mensagem" name="mensagem"></textarea>
+	        <br><button type="submit">Fazer chamada</button>
+	    </form>
+    </div>
+
+    <script>
+    	
+    	$('button').click(function(e) {
+    		const self = $(this);
+
+    		$(self).prop('disabled', true);
+    		$('#avisos').html('');
+    		e.preventDefault();
+			
+			const tel = $('#telefone').val();
+			const msg = $('#mensagem').val();
+
+			$.post('/fazer-chamada', { "telefone": tel, "mensagem": msg }, function(response) {
+				
+				$('#avisos').html(response.responseJSON);
+				
+			}).fail(function(response) {
+				$(self).prop('disabled', false);
+				$('#avisos').html(response.responseJSON);
+			});
+
+    	});
+
+    </script>
+
+</body>
+
+</html>
