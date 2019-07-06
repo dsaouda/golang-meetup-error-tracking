@@ -6,7 +6,7 @@ Para visualizar essa palestra você deve baixar o projeto [Go present tool](http
 
 execute `present`
 
-Se preferir acesse https://go-talks.appspot.com/github.com/dsaouda/golang-meetup-error-tracking/slides.slide#1
+Se preferir acesse [https://go-talks.appspot.com/github.com/dsaouda/golang-meetup-error-tracking/slides.slide#1]
 
 # exemplos
 
